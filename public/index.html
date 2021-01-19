@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/Assets/favicon.png"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Junaid Tahir</title>
+  </head>
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+  <body>
+    <div class="container">
+      <div class="background"></div>
+      <!-- <img class="background" src="/Assets/Background.jpeg"> -->
+
+      <div class="icons-container">
+        <ul class="icons">
+          <li>
+            <a href="https://www.linkedin.com/in/jtahir" target="_blank"
+              ><ion-icon name="logo-linkedin" class="social"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/Junaid-T" target="_blank"><ion-icon name="logo-github" class="social"></ion-icon></ion-icon></a>
+          </li>
+          <li>
+            <a href="/Assets/Junaid_Tahir_CV.pdf" target="_blank"><ion-icon name="document-text" class="social"></ion-icon></ion-icon></a>
+          </li>
+        </ul>
+      </div>
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+      <div class="home-container">
+        <section class="hero-style-text">
+          <div class="hero-1">Hi There</div>
+          <div class="hero-2">I'm Junaid</div>
+          <div class="hero-3">Welcome to my Portfolio</div>
+        </section>
+        <div class="chevron-container">
+          <ion-icon class="chevron" name="chevron-down-outline"></ion-icon>
+        </div>
+      </div>
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+      <div class="about-me-container">
+        <h3 class="about-me-header">Front End Developer with Full Stack Experience</h3>
+        <p class="about-me-text">Hi I'm Junaid, I like to code and build things. <br>Experienced in both Python and Javascript<br>Right I need to add more to this about me section later<br>TEXT TEXT TEXT TEXT TEXT TEXT</p>
+        <div class="stack-icons-container">
+          <img src="/Assets/SVG_ICONS/Python_Icon.svg" />
+          <img src="/Assets/SVG_ICONS/Javascript_Icon.svg" />
+          <img src="/Assets/SVG_ICONS/React_Icon.svg" />
+          <img src="/Assets/SVG_ICONS/NodeJS_Icon.svg" />
+        </div>
+      </div>
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+      <div class="projects-container">
+        <h3 class="projects-header">Projects</h3>
+        <div class="project-cards-container">
+          <div id="project-card-1" class="project-card">
+            <h3>Automate Music with Python</h3>
+            <p>A Python program which combines webscraping with the Spotify API and MongoDB</p>
+            <div class="project-icons-container">
+              <img src="/Assets/SVG_ICONS/Python_Icon.svg">
+              <img src="/Assets/SVG_ICONS/Spotify-Icon-Logo.wine.svg">
+              <img src="/Assets/SVG_ICONS/Alt_Mongo_Icon.svg">
+            </div>
+          </div>
+          <div id="project-card-2" class="project-card">
+            <h3>Chat App</h3>
+            <p>A full stack chat app with React, Node.js & MongoDB.</p>
+            <div class="project-icons-container">
+              <img src="/Assets/SVG_ICONS/React_Icon.svg">
+              <img src="/Assets/SVG_ICONS/NodeJS_Icon.svg">
+              <img src="/Assets/SVG_ICONS/Alt_Mongo_Icon.svg">
+            </div>
+          </div>
+          <div id="project-card-3" class="project-card">
+            <h3>E-Commerce Site</h3>
+            <p>A full stack E-Commerce site made React, Node.js & MongoDB.</p>
+            <div class="project-icons-container">
+              <img src="/Assets/SVG_ICONS/React_Icon.svg">
+              <img src="/Assets/SVG_ICONS/NodeJS_Icon.svg">
+              <img src="/Assets/SVG_ICONS/Alt_Mongo_Icon.svg">
+            </div>
+          </div>
+          <div id="project-card-4" class="project-card">
+            <h3>Football App</h3>
+            <p>A React project which consumes up-to-date football information from a 3rd party API. </p>
+            <div class="project-icons-container">
+              <img src="/Assets/SVG_ICONS/React_Icon.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal"></div>
+
+      <div id="project-content" class="project-content">      
+        <h4>%%PROJECT NAME%%</h4>  
+        <img class="screenshot" src="">
+        <div class="project-button-container">
+        <a href="" target="_blank" id="live" class="project-button">Live</a>
+        <a href="" target="_blank" id="code" class="project-button">Code</a>
+      </div>
+      </div>
+
+
+
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+      <div class="contact-container">
+        <form class="contact-form" method="POST" action="/email">
+        <div class="contact-message">Feel free to reach out</div>
+        <p class="contact-info">Junaidtahir@hotmail.co.uk | 07949216871</p>
+          <input id="contact-name" type="text" placeholder="Name" name="user[name]" class="form-el-1" required />
+          <input id="contact-number" type="text" placeholder="Number" name="user[number]" class="form-el-2" required />
+          <textarea id="contact-message" class="form-el-3" name="user[message]" placeholder="Message"></textarea>
+          <input  type="submit" class="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
